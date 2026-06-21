@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Las Frescas 🍓 — Barra de Paletas Preparadas para tus Eventos</title>
+<meta name="description" content="Crea tu vasito fresco perfecto. Cotiza tu barra de paletas para eventos desde 30 personas.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Nunito:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- ══════════════════════════════════
+     HEADER — una sola barra, siempre
+     ══════════════════════════════════ -->
+<header id="site-header">
+  <div class="inner">
+
+    <!-- Logo -->
+    <a class="h-logo" href="#hero">
+      <img src="assets/images/logo.png" alt="Las Frescas">
+    </a>
+
+    <!-- Links (desktop) -->
+    <ul class="h-links">
+      <li><a href="#como">Cómo funciona</a></li>
+      <li><a href="#productos">El Vasito</a></li>
+      <li><a href="#cotizador">Barra personalizada</a></li>
+      <li><a href="#ferias">Ferias y eventos</a></li>
+      <li><a href="#nosotras">Nosotras</a></li>
+    </ul>
+
+    <!-- CTA (desktop) -->
+    <a href="#cotizador" class="btn btn-pink btn-sm h-cta">🍓 Personaliza tu barra</a>
+
+    <!-- Hamburger (móvil) -->
+    <button class="h-ham" id="hamBtn" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+
+  </div>
+</header>
+
+<!-- Menú móvil overlay -->
+<div id="mob-menu">
+  <button class="mob-close" id="mobClose">✕</button>
+  <a href="#como"      onclick="closeMob()">Cómo funciona</a>
+  <a href="#productos" onclick="closeMob()">Vasito Fresco</a>
+  <a href="#cotizador" onclick="closeMob()">🍓 Diseña tu barra</a>
+  <a href="#ferias"    onclick="closeMob()">Ferias y eventos</a>
+  <a href="#nosotras"  onclick="closeMob()">Nosotras</a>
+  <a href="https://wa.me/5537354762" class="btn btn-green" style="margin-top:8px">📲 WhatsApp</a>
+</div>
+
+<!-- ════ HERO ════ -->
+<section id="hero">
+  <div class="hero-in container">
+
+    <div class="hero-text">
+      <div class="hero-chip">✨ ¡Agenda 2026 abierta!</div>
+      <h1><span class="hl">Crea la barra </span> perfecta para tu evento</h1>
+      <p class="subtext">Paletas mini, servidas con chamoy, chilitos en polvo y los toppings que más te gusten ¡ILIMITADOS!. Tú la diseñas, nosotras la llevamos y lo servimos. 🎉</p>
+      <div class="hero-btns">
+        <a href="#cotizador" class="btn btn-pink" style="font-size:16px">🍓 Personaliza tu barra</a>
+      </div>
+      <div class="hero-stats">
+        <div><div class="hstat-n">30</div><div class="hstat-l">Vasitos mínimo 🍧</div></div>
+        <div class="hero-divider"></div>
+        <div><div class="hstat-n"><b>$45</b></div><div class="hstat-l">Por vasito 💸</div></div>
+        <div class="hero-divider"></div>
+      </div>
+    </div>
+
+    <div class="hero-img-wrap reveal d2">
+      <div class="hero-vasito">
+        <!-- Paletas con palito arriba -->
+        <img src="assets/images/paleta2.png" class="hvp hvp-c" alt="">
+        <img src="assets/images/paleta3.png" class="hvp hvp-l" alt="">
+        <img src="assets/images/paleta1.png" class="hvp hvp-r" alt="">
+        <!-- Vaso -->
+        <img src="assets/images/vaso.png" class="hv-cup" alt="">
+        <!-- Chamoy salpicado -->
+        <img src="assets/images/chamoy.png" class="hv-top hv-chamoy" alt="">
+        <!-- Toppings apilados encima del vaso -->
+        <img src="assets/images/gomitas.png"   class="hv-top hv-gomitas"   alt="">
+        <img src="assets/images/gosito.png"    class="hv-top hv-gosito"    alt="">
+        <img src="assets/images/gusanitos.png" class="hv-top hv-gusanitos" alt="">
+        <img src="assets/images/rollito.png"   class="hv-top hv-rollito"   alt="">
+        <img src="assets/images/barritama.png" class="hv-top hv-barritama" alt="">
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ════ TRUST STRIP ════ -->
+<div class="trust-strip">
+  <div class="trust-track">
+    <span class="t-item"><span class="t-dot"></span>🔒 Apartado seguro garantizado</span>
+    <span class="t-item"><span class="t-dot"></span>🍓 Paletas mini artesanales</span>
+    <span class="t-item"><span class="t-dot"></span>📲 Confirmación por WhatsApp</span>
+    <span class="t-item"><span class="t-dot"></span>🎉 Desde 30 vasitos</span>
+    <span class="t-item"><span class="t-dot"></span>✨ Hecho con amor</span>
+    <span class="t-item"><span class="t-dot"></span>🌶️ Chamoy, chilitos y más</span>
+    <span class="t-item"><span class="t-dot"></span>🔒 Apartado seguro garantizado</span>
+    <span class="t-item"><span class="t-dot"></span>🍓 Paletas mini artesanales</span>
+    <span class="t-item"><span class="t-dot"></span>📲 Confirmación por WhatsApp</span>
+    <span class="t-item"><span class="t-dot"></span>🎉 Desde 30 vasitos</span>
+    <span class="t-item"><span class="t-dot"></span>✨ Hecho con amor</span>
+    <span class="t-item"><span class="t-dot"></span>🌶️ Chamoy, chilitos y más</span>
+  </div>
+</div>
+
+<!-- ════ GARLAND ════ -->
+<div class="garland" style="background:#fff">
+  <svg viewBox="0 0 1200 90" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="height:90px">
+    <path d="M0 28 Q120 14 240 28 Q360 42 480 28 Q600 14 720 28 Q840 42 960 28 Q1080 14 1200 28" fill="none" stroke="#4DB874" stroke-width="3"/>
+    <g fill="#4DB874">
+      <ellipse cx="80"  cy="26" rx="10" ry="5" transform="rotate(-20 80 26)"/>
+      <ellipse cx="80"  cy="26" rx="10" ry="5" transform="rotate(20 80 26)"  opacity=".7"/>
+      <ellipse cx="320" cy="32" rx="10" ry="5" transform="rotate(-25 320 32)"/>
+      <ellipse cx="320" cy="32" rx="10" ry="5" transform="rotate(25 320 32)" opacity=".7"/>
+      <ellipse cx="560" cy="30" rx="10" ry="5" transform="rotate(-22 560 30)"/>
+      <ellipse cx="800" cy="32" rx="10" ry="5" transform="rotate(-20 800 32)"/>
+      <ellipse cx="1040" cy="28" rx="10" ry="5" transform="rotate(-18 1040 28)"/>
+    </g>
+    <line x1="200" y1="28" x2="200" y2="44" stroke="#4DB874" stroke-width="1.5"/>
+    <rect x="190" y="44" width="20" height="30" rx="10" fill="#FDA4AF"/>
+    <circle cx="197" cy="52" r="1.8" fill="#F43F6E"/>
+    <circle cx="203" cy="52" r="1.8" fill="#F43F6E"/>
+    <rect x="198" y="72" width="4" height="10" rx="2" fill="#D6B896"/>
+    <line x1="500" y1="28" x2="500" y2="44" stroke="#4DB874" stroke-width="1.5"/>
+    <circle cx="500" cy="54" r="11" fill="#BEF264"/>
+    <circle cx="497" cy="53" r="1" fill="#4D7C0F"/>
+    <circle cx="503" cy="53" r="1" fill="#4D7C0F"/>
+    <path d="M497 57 Q500 59 503 57" fill="none" stroke="#4D7C0F" stroke-width="1.2" stroke-linecap="round"/>
+    <line x1="800" y1="28" x2="800" y2="44" stroke="#4DB874" stroke-width="1.5"/>
+    <rect x="790" y="44" width="20" height="30" rx="10" fill="#C4B5FD"/>
+    <circle cx="797" cy="52" r="1.8" fill="#7C3AED"/>
+    <circle cx="803" cy="52" r="1.8" fill="#7C3AED"/>
+    <rect x="798" y="72" width="4" height="10" rx="2" fill="#D6B896"/>
+    <line x1="1050" y1="28" x2="1050" y2="44" stroke="#4DB874" stroke-width="1.5"/>
+    <circle cx="1050" cy="54" r="11" fill="#EF4444"/>
+    <ellipse cx="1046" cy="50" rx="4" ry="3" fill="#22C55E" transform="rotate(-15 1046 50)"/>
+    <ellipse cx="1056" cy="50" rx="4" ry="3" fill="#22C55E" transform="rotate(15 1056 50)"/>
+  </svg>
+</div>
+
+<!-- ════ CÓMO FUNCIONA ════ -->
+<section id="como" class="section" style="background:#fff">
+  <div class="container">
+    <div style="text-align:center">
+      <div class="eyebrow reveal">✨ Súper fácil</div>
+      <h2 class="reveal d1">Tu evento, <span class="hl">sin estrés</span></h2>
+      <p class="subtext reveal d2" style="margin:10px auto 0">Cotiza, aparta y el día de tu fiesta solo disfruta. Nosotras nos encargamos del resto. 🍓</p>
+    </div>
+    <div class="steps-grid">
+      <div class="step-card reveal">
+        <div class="step-icon">🍡</div>
+        <div class="step-num">Paso 01</div>
+        <h3>Diseña la barra perfecta</h3>
+        <p>Elige el chamoy, los chilitos y los toppings arrastrándolos a cada sección de la barra.</p>
+      </div>
+      <div class="step-card reveal d1">
+        <div class="step-icon">🔒</div>
+        <div class="step-num">Paso 02</div>
+        <h3>Aparta tu fecha</h3>
+        <p>Con un anticipo del 50% tu fecha queda reservada. Nos comunicamos contigo para confirmar tu reserva por Llamada o WhatsApp.</p>
+      </div>
+      <div class="step-card reveal d2">
+        <div class="step-icon">🎉</div>
+        <div class="step-num">Paso 03</div>
+        <h3>¡A disfrutar!</h3>
+        <p>Llegamos puntual y con todo listo. Tú solo recibe los halagos.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GARLAND 2 -->
+<div class="garland" style="background:var(--warm)">
+  <svg viewBox="0 0 1200 50" preserveAspectRatio="none" style="height:50px">
+    <path d="M0 20 Q150 8 300 20 Q450 32 600 20 Q750 8 900 20 Q1050 32 1200 20 L1200 50 L0 50 Z" fill="white"/>
+  </svg>
+</div>
+
+<!-- ════ EL VASITO ════ 
+<section id="productos" class="section" style="background:var(--warm)">
+  <div class="container">
+    <div>
+      <div class="eyebrow reveal">🍡 Lo que servimos</div>
+      <h2 class="reveal d1">El <span class="hl">Vasito Fresco</span><br>que todos adoran</h2>
+      <p class="subtext reveal d2" style="margin-top:10px">3 paletas mini, chamoy, chilitos y los toppings que tú quieras.</p>
+    </div>
+    <div class="prod-grid">
+      <div class="prod-showcase reveal">
+        <div class="prod-paletas">
+          <img src="assets/images/paleta2.png" class="pp-c" alt="">
+          <img src="assets/images/paleta3.png" class="pp-l" alt="">
+          <img src="assets/images/paleta1.png" class="pp-r" alt="">
+          <img src="assets/images/vaso.png"    class="pp-cup" alt="">
+        </div>
+        <div class="top-pills">
+          <span class="top-pill">🌶️ Chamoy</span>
+          <span class="top-pill">🐛 Skwinkles</span>
+          <span class="top-pill">🐻 Panditas</span>
+          <span class="top-pill">🫙 Tajín</span>
+          <span class="top-pill">🍬 Gomitas</span>
+          <span class="top-pill">🍓 Fruta</span>
+        </div>
+        <div class="prod-price">
+          <div class="prod-price-amt">$45 <span style="font-size:16px;font-weight:700">x vasito</span></div>
+          <div class="prod-price-lbl">Descuentos en paquetes con mas de 50 vasitos</div>
+        </div>
+      </div>
+      <div class="prod-items">
+        <div class="prod-item reveal">
+          <div class="pi-icon">🍡</div>
+          <div class="pi-text"><h4>3 Paletas Mini</h4><p>Sabores variados y coloridos, siempre frescos.</p></div>
+        </div>
+        <div class="prod-item reveal d1">
+          <div class="pi-icon">🌶️</div>
+          <div class="pi-text"><h4>Chamoy + Chilito a elegir</h4><p>Chamoy rojo, mango o tamarindo. Tajín, Miguelito o chilito en polvo.</p></div>
+        </div>
+        <div class="prod-item reveal d2">
+          <div class="pi-icon">🍬</div>
+          <div class="pi-text"><h4>Toppings variados</h4><p>Panditas, gomitas, fruta fresca, coco rallado y más.</p></div>
+        </div>
+        <div class="prod-item reveal d3">
+          <div class="pi-icon">📸</div>
+          <div class="pi-text"><h4>100% Instagrameable</h4><p>Stand colorido, cada vasito listo para la foto.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>-->
+
+<!-- GARLAND 3 -->
+<div class="garland" style="background:var(--cream)">
+  <svg viewBox="0 0 1200 50" preserveAspectRatio="none" style="height:50px">
+    <path d="M0 0 L1200 0 Q1050 40 900 30 Q750 20 600 30 Q450 40 300 30 Q150 20 0 30 Z" fill="var(--warm)"/>
+  </svg>
+</div>
+
+<!-- ════ COTIZADOR ════ -->
+<section id="cotizador" class="section">
+  <div class="container">
+    <div class="cot-head">
+      <div class="eyebrow reveal">🧮 Cotizador</div>
+      <h2 class="reveal d1">Crea la <span class="hl">barra perfecta</span> para tus amigos</h2>
+      <p class="subtext reveal d2" style="margin:10px auto 0">Elige la cantidad, diseña tu barra y aparta tu fecha. 🔒</p>
+    </div>
+    <div class="trust-row reveal">
+      <span class="tr-it">🔒 Reserva segura</span>
+      <span class="tr-it">📄 Ticket de confirmación</span>
+      <span class="tr-it">💬 Comunicación al instante</span>
+      <span class="tr-it">💳 50% Reserva, Liquida el día del evento</span>
+    </div>
+
+    <div class="wizard reveal d1">
+      <!-- Progreso -->
+      <div class="wiz-prog">
+        <div class="ps active"><div class="ps-dot">1</div><div class="ps-lbl">Paquete</div></div>
+        <div class="ps"><div class="ps-dot">2</div><div class="ps-lbl">Tu Barra</div></div>
+        <div class="ps"><div class="ps-dot">3</div><div class="ps-lbl">Extras</div></div>
+        <div class="ps"><div class="ps-dot">4</div><div class="ps-lbl">Evento</div></div>
+        <div class="ps"><div class="ps-dot">5</div><div class="ps-lbl">Resumen</div></div>
+      </div>
+
+      <div class="wiz-body">
+
+        <!-- PASO 1 -->
+        <div class="step-pnl active" id="sp0">
+          <div class="wiz-ttl">¿Para cuántas personas?</div>
+          <div class="wiz-sub">El precio baja mientras más pidas 🎉</div>
+          <div class="pkg-grid" id="pkgGrid"></div>
+          <div class="wiz-nav">
+            <div></div>
+            <button class="btn btn-pink" onclick="nextStep()">Personalizar mi barra →</button>
+          </div>
+        </div>
+
+        <!-- PASO 2: ARMA TU BARRA -->
+        <div class="step-pnl" id="sp1">
+          <div class="wiz-ttl">🍬 ¡Arma tu Barra!</div>
+          <div class="wiz-sub" id="barraSubtitle">Elige 3 sabores para tus paletas.</div>
+
+          <!-- FASE TABS -->
+          <div class="barra-phase-tabs" id="barraPhaseTabs"></div>
+
+          <!-- FASE 0: Sabores de Paleta -->
+          <div id="sabores-panel" class="barra-fase-panel">
+            <div id="saboresGrid"></div>
+          </div>
+
+          <!-- FASE 1: Salsas -->
+          <div id="salsas-panel" class="barra-fase-panel" style="display:none">
+            <p class="fase-hint">Selecciona tus salsas favoritas para tu barra, ya van incluidas ✨</p>
+            <div class="sp-grid" id="salsasFaseGrid"></div>
+          </div>
+
+          <!-- FASE 2: Polvos -->
+          <div id="polvos-panel" class="barra-fase-panel" style="display:none">
+            <p class="fase-hint">Selecciona tus chilitos favoritss para tu barra, ya van incluidas 🌶️</p>
+            <div class="sp-grid" id="polvosFaseGrid"></div>
+          </div>
+
+          <!-- FASE 3: Toppings en la Barra -->
+          <div id="toppings-panel" class="barra-fase-panel" style="display:none">
+            <div id="barraStatus" class="barra-status">0 / 8 charolas listas</div>
+            <p class="fase-hint">Toca una charola y elige tus toppings favoritos 👆</p>
+            <div class="barra-stage-wrap">
+              <img src="assets/images/barra.png" class="barra-bg-img" alt="Barra Las Frescas">
+              <div class="tray-slot" id="slot-0" data-slot="0" data-num="1" onclick="selectSlot(0)"></div>
+              <div class="tray-slot" id="slot-1" data-slot="1" data-num="2" onclick="selectSlot(1)"></div>
+              <div class="tray-slot" id="slot-2" data-slot="2" data-num="3" onclick="selectSlot(2)"></div>
+              <div class="tray-slot" id="slot-3" data-slot="3" data-num="4" onclick="selectSlot(3)"></div>
+              <div class="tray-slot" id="slot-4" data-slot="4" data-num="5" onclick="selectSlot(4)"></div>
+              <div class="tray-slot" id="slot-5" data-slot="5" data-num="6" onclick="selectSlot(5)"></div>
+              <div class="tray-slot" id="slot-6" data-slot="6" data-num="7" onclick="selectSlot(6)"></div>
+              <div class="tray-slot" id="slot-7" data-slot="7" data-num="8" onclick="selectSlot(7)"></div>
+            </div>
+            <div class="slot-list" id="slotList"></div>
+          </div>
+
+          <!-- Navegación entre fases -->
+          <div class="barra-phase-nav">
+            <button class="btn-back" id="barraPhaseBack" onclick="prevBarraPhase()" style="display:none">← Atrás</button>
+            <button class="btn btn-pink" id="barraPhaseNext" onclick="nextBarraPhase()">Siguiente →</button>
+          </div>
+
+          <div class="wiz-nav" style="border-top:1.5px solid var(--gray-l);margin-top:16px;padding-top:16px">
+            <button class="btn-back" onclick="prevStep()">← Paquete</button>
+            <div></div>
+          </div>
+        </div>
+
+        <!-- TOPPING PICKER (bottom sheet) -->
+        <div id="toppingPicker" class="topping-picker">
+          <div class="picker-drag"></div>
+          <div class="picker-header">
+            <div class="picker-title" id="pickerTitle">Elige un topping</div>
+            <button class="picker-close" onclick="closeToppingPicker()">✕</button>
+          </div>
+          <div class="topping-picker-grid" id="toppingPickerGrid"></div>
+        </div>
+
+        <!-- PASO 3 -->
+        <div class="step-pnl" id="sp2">
+          <div class="wiz-ttl">¿Algo extra para tu evento?</div>
+          <div class="wiz-sub">Opcionales ✨</div>
+          <div class="live-total"><span>Total estimado:</span><span class="lt-num" id="ltNum">—</span></div>
+          <div class="extras-list" id="extrasGrid"></div>
+          <div class="wiz-nav">
+            <button class="btn-back" onclick="prevStep()">← Mi Barra</button>
+            <button class="btn btn-pink" onclick="nextStep()">Datos del evento →</button>
+          </div>
+        </div>
+
+        <!-- PASO 4 -->
+        <div class="step-pnl" id="sp3">
+          <div class="wiz-ttl">¿Cuándo es tu evento?</div>
+          <div class="wiz-sub">Para apartar tu fecha 📅</div>
+          <div class="ev-grid" id="evGrid"></div>
+          <div class="fg-row">
+            <div class="fg"><label>Fecha *</label><input class="fi" type="date" id="evDate"></div>
+            <div class="fg"><label>Hora *</label><input class="fi" type="time" id="evTime"></div>
+          </div>
+          <div class="fg"><label>Colonia / Municipio *</label><input class="fi" type="text" id="evLoc" placeholder="Ej: Ecatepec, Tecamac..."></div>
+          <div class="fg"><label>Tu nombre *</label><input class="fi" type="text" id="evName" placeholder="¿Cómo te llamamos?"></div>
+          <div class="fg-row">
+            <div class="fg"><label>WhatsApp *</label><input class="fi" type="tel" id="evPhone" placeholder="55 1234 5678"></div>
+            <div class="fg"><label>Email (opcional)</label><input class="fi" type="email" id="evEmail" placeholder="tu@email.com"></div>
+          </div>
+          <div class="fg"><label>Notas / Tema de fiesta</label><textarea class="fi" id="evNotes" rows="3" placeholder="Tema, colores, especificaciones..."></textarea></div>
+          <div class="wiz-nav">
+            <button class="btn-back" onclick="prevStep()">← Extras</button>
+            <button class="btn btn-pink" onclick="nextStep()">Ver resumen →</button>
+          </div>
+        </div>
+
+        <!-- PASO 5 -->
+        <div class="step-pnl" id="sp4">
+          <div class="wiz-ttl">🎉 ¡Tu barra está lista!</div>
+          <div class="wiz-sub">Revisa y aparta tu fecha.</div>
+          <!-- Preview barra en resumen -->
+          <div id="sumBarra"></div>
+          <div class="sum-box" id="sumBox"></div>
+          <div class="sum-total" id="sumTotal"></div>
+          <div class="apartado-box">
+            <div class="ap-ttl">🔒 Apartado del 40%</div>
+            <div class="ap-amt" id="apAmt">—</div>
+            <div class="ap-dsc">Con este pago tu fecha queda bloqueada. Tu fecha queda confirmada con el 50% de apartado. El saldo restante se liquida el día del evento.</div>
+          </div>
+          <div class="pay-info">
+            <strong>💳 ¿Cómo pago?</strong><br>
+            Al enviar tu solicitud te compartimos datos para transferencia SPEI, CoDi o Mercado Pago y te contactamos con una asesora.
+          </div>
+          <button onclick="printCotizacion()" class="btn btn-full" style="background:var(--dark);color:#fff;margin-bottom:10px;font-size:15px">
+            🖨️ Descargar cotización PDF
+          </button>
+          <a id="waBtn" href="#" class="btn btn-green btn-full" style="font-size:16px;margin-bottom:10px">📲 Enviar solicitud por WhatsApp</a>
+          <button class="btn-back btn-full" onclick="prevStep()" style="text-align:center;width:100%">← Modificar</button>
+          <div style="text-align:center;margin-top:12px">
+            <button class="btn-back" onclick="resetWizard()" style="font-size:12px">🔄 Nueva cotización</button>
+          </div>
+        </div>
+
+      </div><!-- /wiz-body -->
+    </div><!-- /wizard -->
+  </div>
+</section>
+
+<!-- ════ FERIAS ════ -->
+<section id="ferias" class="section" style="background:#fff">
+  <div class="container">
+    <div>
+      <div class="eyebrow reveal">📍 Encuéntranos</div>
+      <h2 class="reveal d1">Próximas <span class="hl">ferias y bazares</span></h2>
+      <p class="subtext reveal d2" style="margin-top:10px">¿Quieres probar antes de ordenar? ¡Ven a vernos! 🍓</p>
+    </div>
+    <div class="ferias-grid" id="feriasGrid"></div>
+  </div>
+</section>
+
+<!-- ════ REDES ════ -->
+<section id="redes" class="section" style="background:var(--warm)">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:40px">
+      <div class="eyebrow reveal">📱 Síguenos</div>
+      <h2 class="reveal d1">Míranos en <span class="hl">acción</span></h2>
+      <p class="subtext reveal d2" style="margin:10px auto 0">
+        Vasitos frescos, eventos y mucho chamoy. 🍓
+      </p>
+    </div>
+
+    <!-- Carrusel de videos -->
+    <div class="vid-carousel-wrap reveal">
+      <button class="vid-arrow vid-prev" id="vidPrev">‹</button>
+      <div class="vid-track-outer">
+        <div class="vid-track" id="vidTrack">
+
+          <!-- ══════════════════════════════════════════
+               VIDEOS DE INSTAGRAM
+               Cómo obtener el ID:
+               1. Abre tu post en Instagram
+               2. La URL es: instagram.com/p/ESTE_ES_EL_ID/
+               3. Reemplaza SHORTCODE_1, SHORTCODE_2... con ese ID
+               ══════════════════════════════════════════ -->
+          <div class="vid-card">
+            <iframe src="https://www.instagram.com/p/DYr7qMEO-uY/embed/captioned/"
+              frameborder="0" scrolling="no" allowtransparency="true" loading="lazy"></iframe>
+            <div class="vid-label"><span>📸</span> Instagram</div>
+          </div>
+
+          <!--<div class="vid-card">
+            <iframe src="https://www.instagram.com/p/SHORTCODE_2/embed/captioned/"
+              frameborder="0" scrolling="no" allowtransparency="true" loading="lazy"></iframe>
+            <div class="vid-label"><span>📸</span> Instagram</div>
+          </div>
+
+          <div class="vid-card">
+            <iframe src="https://www.instagram.com/p/SHORTCODE_3/embed/captioned/"
+              frameborder="0" scrolling="no" allowtransparency="true" loading="lazy"></iframe>
+            <div class="vid-label"><span>📸</span> Instagram</div>
+          </div>-->
+
+          <!-- ══════════════════════════════════════════
+               VIDEOS DE TIKTOK
+               Cómo obtener el ID:
+               1. Abre tu video en TikTok
+               2. La URL es: tiktok.com/@usuario/video/ESTE_ES_EL_ID
+               3. Reemplaza TIKTOK_ID_1, TIKTOK_ID_2... con ese número
+               ══════════════════════════════════════════ -->
+          <div class="vid-card">
+            <iframe src="https://www.tiktok.com/embed/v2/7643554001979591943"
+              frameborder="0" scrolling="no" allowfullscreen loading="lazy"></iframe>
+            <div class="vid-label"><span>🎵</span> TikTok</div>
+          </div>
+
+          <div class="vid-card">
+            <iframe src="https://www.tiktok.com/embed/v2/7643208063029136648"
+              frameborder="0" scrolling="no" allowfullscreen loading="lazy"></iframe>
+            <div class="vid-label"><span>🎵</span> TikTok</div>
+          </div>
+
+          <div class="vid-card">
+            <iframe src="https://www.tiktok.com/embed/v2/7643111433873444114"
+              frameborder="0" scrolling="no" allowfullscreen loading="lazy"></iframe>
+            <div class="vid-label"><span>🎵</span> TikTok</div>
+          </div>
+
+        </div><!-- /vid-track -->
+      </div>
+      <button class="vid-arrow vid-next" id="vidNext">›</button>
+    </div><!-- /vid-carousel-wrap -->
+
+    <!-- Dots -->
+    <div class="vid-dots" id="vidDots"></div>
+
+    <!-- Botones seguir -->
+    <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:32px" class="reveal">
+      <a href="https://www.instagram.com/las.frescasmx/" target="_blank" class="btn btn-pink">📸 Seguir en Instagram</a>
+      <a href="https://www.tiktok.com/@las.frescas50"    target="_blank" class="btn" style="background:#010101;color:#fff">🎵 Seguir en TikTok</a>
+    </div>
+  </div>
+</section>
+
+<!-- ════ NOSOTRAS ════ -->
+<section id="nosotras" class="section" style="background:var(--cream)">
+  <div class="container">
+    <div class="eyebrow reveal">👯 Quiénes somos</div>
+    <div class="about-grid">
+      <div class="about-visual reveal">
+        <img src="assets/images/logo.png" alt="Las Frescas" style="width:200px;height:auto">
+        <div class="about-tags">
+          <span class="about-tag">🍓 Hecho con amor</span>
+          <span class="about-tag">✨ Siempre frescas</span>
+          <span class="about-tag">🎉 Para toda ocasión</span>
+          <span class="about-tag">💪 Emprendedoras</span>
+          <span class="about-tag">📍 Ecatepec, EDOMEX</span>
+        </div>
+      </div>
+      <div class="about-info reveal d2">
+        <h3>El origen de Las Frescas 🍓</h3>
+        <p>Somos dos amigas con un sueño en común: llevar alegría y sabor a cada evento. Las Frescas nació del amor por los antojitos mexicanos y las ganas de crear algo lindo que le endulce la vida a los mexicanos en sus fiestas.</p>
+        <h3>¿Por qué vasitos frescos?</h3>
+        <p>Porque nadie le dice no a una paleta mini bañada en chamoy. Es el snack perfecto: fresco, colorido, delicioso y 100% instagrameable. Ademas son el pretexto perfecto para tomarte fotos ocn tus amigos.📸</p>
+        <h3>Nuestra promesa</h3>
+        <p>Cada vasito sale con amor. Tu satisfacción es nuestra mayor motivación. Endulza el día de tus invitados y hazlo innolvidable.</p>
+        <a href="#cotizador" class="btn btn-pink" style="margin-top:8px">🍓 Cotiza con nosotras</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════ CTA FINAL ════ -->
+<section id="contacto">
+  <div class="container">
+    <div class="cta-deco">🍓 🍡 🌶️ 🎉 ✨</div>
+    <h2 class="reveal">¿Lista para el evento<br><span style="color:rgba(255,255,255,.85)">más fresco de todos?</span></h2>
+    <p class="cta-sub reveal d1">Ponle sabor, color y la vibra que solo Las Frescas dan.</p>
+    <div style="display:flex;gap:14px;flex-wrap:wrap;justify-content:center" class="reveal d2">
+      <a href="#cotizador" class="btn btn-pink" style="font-size:16px">🍓 Personaliza tu barra</a>
+      <a href="https://wa.me/5537354762" target="_blank" class="btn btn-green" style="font-size:16px">📲 WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- ════ FOOTER ════ -->
+<footer>
+  <div class="foot-in">
+    <div class="foot-logo"><img src="assets/images/logo.png" alt="Las Frescas"></div>
+    <nav class="foot-links">
+      <a href="#como">Cómo funciona</a>
+      <a href="#productos">La Barra</a>
+      <a href="#cotizador">Cotizar</a>
+      <a href="#ferias">Ferias</a>
+      <a href="#nosotras">Nosotras</a>
+    </nav>
+    <p>© 2026 Las Frescas · CDMX y Área Metropolitana · Hecho con 🍓 y mucho amor</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>
+  // Nav scroll + hamburger (inline so funciona sin imports)
+  const hdr = document.getElementById('site-header');
+  window.addEventListener('scroll', () => hdr.classList.toggle('scrolled', scrollY > 40));
+  document.getElementById('hamBtn').addEventListener('click', () => document.getElementById('mob-menu').classList.add('open'));
+  document.getElementById('mobClose').addEventListener('click', closeMob);
+  function closeMob(){ document.getElementById('mob-menu').classList.remove('open'); }
+</script>
+</body>
+</html>
